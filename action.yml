@@ -62,6 +62,8 @@ runs:
 
     - name: Action Terragrunt
       shell: bash
+      env:
+        TF_IN_AUTOMATION: true
       working-directory: ${{ inputs.tg_directory }}
       run: |
         terragrunt ${{ inputs.tg_action }} \
