@@ -58,3 +58,4 @@ jobs:
           tg_directory: ./infra/dev
           tg_action: apply
           override_tg_vars: '{"env": "dev", "region": "eu-west-2"}'
+
